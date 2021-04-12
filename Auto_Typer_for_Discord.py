@@ -7,9 +7,10 @@ from tkinter import *
 
 root = Tk()
 root.title("Auto Typer")
-root.geometry("875x400")
+root.geometry("875x515")
+root.configure(bg = "white")
 
-text = Text(root, height=1, width=875)
+text = Text(root, height=1, width=875, font = "BOLD")
 text.pack()
 text.insert("1.0", " _____________________________________________________________________________________")
 text['state'] = "disabled"
@@ -44,7 +45,7 @@ text.pack()
 text.insert("1.0", " /        \ |_______|    |    |_______|      |       |    |         |_______ |      \ ")
 text['state'] = "disabled"
 
-text = Text(root, height=1, width=875)
+text = Text(root, height=1, width=875, font = "BOLD")
 text.pack()
 text.insert("1.0", " _____________________________________________________________________________________")
 text['state'] = "disabled"
@@ -54,25 +55,20 @@ text.pack()
 text.insert("1.0", "                                    by IdleEndeavor")
 text['state'] = "disabled"
 
-entry1 = Entry(root, width = 30)
-entry1.pack()
+entry1 = Entry(root, width = 30, borderwidth = 5, relief = RIDGE)
+entry1.pack(pady = 5)
 
-entry2 = Entry(root, width = 30)
-entry2.pack()
+entry2 = Entry(root, width = 30, borderwidth = 5, relief = RIDGE)
+entry2.pack(pady = 5)
 
-entry3 = Entry(root, width = 30)
-entry3.pack()
+entry3 = Entry(root, width = 30, borderwidth = 5, relief = RIDGE)
+entry3.pack(pady = 5)
 
-entry4 = Entry(root, width = 30)
-entry4.pack()
+entry4 = Entry(root, width = 30, borderwidth = 5, relief = RIDGE)
+entry4.pack(pady = 5)
 
-entry5 = Entry(root, width = 30)
-entry5.pack()
-
-text = Text(root, height=1, width=875)
-text.pack()
-text.insert("1.0", "              --> Hold Right Shift Key for 5 Seconds to Stop Program <--")
-text['state'] = "disabled"
+entry5 = Entry(root, width = 30, borderwidth = 5, relief = RIDGE)
+entry5.pack(pady = 5)
 
 def button_command():
     #Text to be automatically run
@@ -98,7 +94,12 @@ def button_command():
         pyautogui.press("enter")
         print(texter)
 
-Button(root, text = "Start", command = button_command).pack()
+Button(root, text = "Start", command = button_command, padx = 20, relief = RAISED).pack(pady = 10)
+
+text = Text(root, height=1, width=875, relief = RAISED, font = "BOLD")
+text.pack()
+text.insert("1.0", "                             --> Hold Right Shift Key for 5 Seconds to Stop Program <--")
+text['state'] = "disabled"
 
 me = True
 while me == True:
