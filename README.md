@@ -8,6 +8,7 @@ So here's a simple bot I've made to help automate the process of mining such coi
 4. Right click on the message entry box within Discord
 5. Thats it!, the bot will keep repeating the commands one by one every five seconds until stopped
     Press and Hold the 'Shift' key for 5 Seconds in order to stop the bot
+5. Enjoy
 
 **Warning**
 Repeatedly using this bot may result in your account being banned. Use at your own risk. I am not responsible for any accounts terminated or banned due to the use of this automation program.
